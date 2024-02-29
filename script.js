@@ -1,5 +1,5 @@
 var audio;
-var currentsong=new Audio("http://127.0.0.1:5500/songs/Heeriye.mp3.preview");
+var currentsong=new Audio("songs/Heeriye.mp3");
 
 
 async function getSongs(){
