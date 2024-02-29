@@ -3,7 +3,7 @@ var currentsong=new Audio("songs/Heeriye.mp3");
 
 
 async function getSongs(){
-    let a = await fetch('songs/songs.html');
+    let a = await fetch('songs/');
 
     let response = await a.text();
     console.log(response);
@@ -167,4 +167,3 @@ function changevol(){
     currentsong.volume = newval*0.01;
     
 }
-
