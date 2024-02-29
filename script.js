@@ -13,8 +13,8 @@ async function getSongs(){
     let songs = [];
     for(let i =0;i<alink.length;i++){
         const e = alink[i];
-        if(e.href.endsWith(".mp3")){
-            // let s = e.href.replace(".preview","");
+        if(e.href.endsWith(".mp3.preview")){
+            let s = e.href.replace(".preview","");
             songs.push(s);
         }
     }
