@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilites.css">
+
+</head>
+
+<body>
+    <div class="container  flex bg-black ">
+        <div class="left border bg-black">
+            <div class="home border p-1 bg-grey margin flex">
+             
+                <div class="logo"><img src="images/logo.svg" alt="logo" class="invert" height="34"></div> 
+                <ul class="flex">
+                    <li><img src="images/home.svg" alt="home" height="25" class="invert">Home</li>
+                    <li><img src="images/search.svg" alt="search" height="25" class="invert">Search</li>
+                </ul>
+            </div>
+
+            <div class="library border margin bg-grey">
+                <div class="heading flex p-2 border bg-grey">
+                    <img src="images/library.svg" alt="library" class="invert" height="40"><span>Your Library</span>
+                </div>
+
+                <div class="songlist">
+                    <ul>
+                        <li>
+
+                            <img src="images/music.svg" alt="music" class="invert">
+                            <div class="info">
+                                <p>Song Name</p>
+                                <p>Artist Name</p>
+                            </div>
+                            <div class="flex playnow" style="align-items: center;gap: 2px;">
+                                <span>Play now</span>
+                                <img src="images/play.svg" class="invert" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer border">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right border bg-grey">
+            <nav class="flex bg-black">
+                <ul class="flex">
+                    <li><img src="images/menu.svg" alt="" id="menu" class="invert"></li>
+                    <li><</li>
+                    <li>></li>
+                </ul>
+
+                <div class="buttons">
+                    <button class="signup">Sign Up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </nav>
+            <h1 class="p-1 margin">Spotify Playlists</h1>
+            <div class="playlists p-1">
+
+                <div class="cards border p-2 margin flex">
+                    <div><img height="200" src="https://i.scdn.co/image/ab67706f000000028aa213d23c60645e2649a350"
+                            alt="cover"></div>
+                    <span>Mega Hit Mix</span>
+                    <p>A mega mix of 75 favorites from the last few years!</p>
+                </div>
+                
+                <div class="cards border p-2 margin flex">
+                    <div><img height="200" src="https://i.scdn.co/image/ab67706f000000021e8e1adb3db7cbb52311346d"
+                            alt="cover"></div>
+                    <span>Rise</span>
+                    <p>Positive and uplifting ambient instrumental tracks.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="playbar invert">
+            
+            <div class="flex nametime" >
+                <div class="songinfo"></div>
+                <div class="songtime"></div>
+            </div>
+            <div class="flex controls">
+
+                <img src="images/previous.svg" alt="previous" id="previous">
+                <img src="images/play.svg" alt="play" id="play">
+                <img src="images/next.svg" alt="next" id="next">
+
+                <div class="vol flex">
+                    <label for="ranger"><img src="images/volume.svg" alt=""></label>
+                    <input type="range" id="ranger" onchange="changevol()">
+                </div>
+            </div>
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

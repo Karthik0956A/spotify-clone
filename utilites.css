@@ -1,0 +1,32 @@
+.bg-black {
+    background-color: black;
+}
+
+.bg-grey {
+    background-color: rgb(21, 18, 18);
+}
+
+.flex{
+    display: flex;
+}
+
+.border{
+    /* border: 2px solid red; */
+    border-radius: 6px;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.p-1{
+    padding: 20px;
+}
+
+.p-2{
+    padding: 10px;
+}
+
+.margin{
+    margin:10px;
+}
