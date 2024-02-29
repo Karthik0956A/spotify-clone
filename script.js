@@ -3,7 +3,7 @@ var currentsong=new Audio("http://127.0.0.1:5500/songs/Heeriye.mp3.preview");
 
 
 async function getSongs(){
-    let a = await fetch('http://127.0.0.1:5500/songs/');
+    let a = await fetch('https://raw.githubusercontent.com/karthik0956a/spotify-clone/main/songs/songs.html');
 
     let response = await a.text();
     console.log(response);
@@ -27,7 +27,7 @@ async function loadsongs(song)
     for(let i = 0;i<song.length;i++){
         let div = document.createElement("div");
         
-        div.innerHTML = song[i].replace("http://127.0.0.1:5500/songs/","");
+        div.innerHTML = song[i].replace("https://raw.githubusercontent.com/karthik0956a/spotify-clone/main/songs/","");
         div.innerHTML = div.innerHTML.replaceAll("%20"," ");
         let songul = document.querySelector(".songlist").getElementsByTagName("ul")[0];
         songul.innerHTML= songul.innerHTML +`
